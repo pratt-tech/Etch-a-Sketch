@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style1.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        Etch-a-Sketch
+      </div>
+    
+      <div class="grid">
+        <div class="sidebar">
+          <button id="classic">Classic Mode</button>
+          <button id="painting">Painting Mode</button>
+          <button id="random">Random Mode</button>
+    
+          <input id="color" type="color" name="color" value="#000000" />
+    
+          <label for="num">Number of Cells:</label>
+          <input id="num" type="number" name="num" value="16" max="200" min="10" data-sizing="px" />
+          <button id="new">New Canvas</button>
+          <button id="default">Default Canvas</button>
+    
+        </div>
+    
+        <div class="container"></div>
+    
+        <div class="sidebar">
+    
+        </div>
+      </div>
+</body>
+</html>

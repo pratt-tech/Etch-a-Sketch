@@ -1,0 +1,102 @@
+:root {
+    --cell-size: 37.5px;
+  }
+  
+  html {
+    background: #333;
+  }
+  
+  html,
+  body {
+    font: 10px sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    font: 2.5rem 'VT323', monospace;
+    letter-spacing: 1.5rem;
+    padding: 25px 0;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  
+  .header,
+  .footer {
+    text-align: center;
+  }
+  
+  .header,
+  .footer,
+  .sidebar {
+    color: white;
+  }
+  
+  .grid {
+    display: inline-grid;
+    grid-template-columns: 300px auto 300px;
+    width: 100%;
+  }
+  
+  .sidebar {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .sidebar:first-of-type {
+    padding-left: 15px;
+  }
+  
+  button {
+    display: block;
+    font-size: 1.5rem;
+    margin: 25px auto;
+    padding: 15px;
+    width: 160px;
+  }
+  
+  button:first-of-type {
+    margin-top: 0;
+  }
+  
+  input[type="color" i] {
+    display: block;
+    height: 100px;
+    margin: 50px auto 100px;
+    padding: 0 1px;
+    width: 100px;
+  }
+  
+  .active {
+    box-shadow: 0 0 5px white;
+  }
+  
+  .container {
+    background: black;
+    border: 1px solid black;
+    margin: auto;
+    padding: 25px;
+    width: 600px;
+  }
+  
+  .row {
+    background: #eee;
+    display: flex;
+  }
+  
+  .cell {
+    display: inline-block;
+    height: var(--cell-size);
+    width: var(--cell-size);
+  }
+  
+  .row:nth-child(odd) .cell:nth-child(odd),
+  .row:nth-child(even) .cell:nth-child(even) {
+    background: white;
+  }
+  
+  .footer {
+    display: block;
+    padding: 25px 0;
+    width: 100%;
+  }
